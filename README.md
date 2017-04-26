@@ -1,14 +1,14 @@
 # Tg\FixtureBundle
 
-Highly customizable and fast Loader for fixtures with support for testing.
+Highly customizable and fast loader for fixtures with support for testing.
 
 ## Createing Fixtures
 Fixtures are defined in YAML Twig Files.
-In each Bundle you can define these Yaml Twig files in [Bundle]/Fixture/Resouces/[...].yml.twig
+In each bundle you can define these Yaml Twig files in [Bundle]/Fixture/Resouces/[...].yml.twig
 
 ### YAML File
 
-for example if you want to create Fixtures for a `Blog-Post`, you could create such a file:
+for example if you want to create fixtures for a `Blog-Post`, you could create such a file:
 
 
 AppBundle/Fixture/Resouces/blogpost.yml.twig
@@ -112,8 +112,8 @@ you can easily extend this to support any kind of data storage.
 
 ## Loading Fixtures in Tests
 
-Loading Fixtures in Tests can be very helpful.
-This Bundle comes with a helper Trait for Doctrine, but you can write your own if you use different 
+loading fixtures in tests can be very helpful.
+This bundle comes with a helper trait for Doctrine, but you can write your own if you use different 
 Datastorages.
 
 You need to extend from the KernelTestCase (WebTestCase is also fine) 
@@ -147,5 +147,5 @@ class DefaultControllerTest extends KernelTestCase
 
 ```
 
-This Code is highly optimized, running testIndex 100 times, takes around 800ms in my dev system.
+This code is highly optimized, running testIndex 100 times, takes around 800ms in my dev system.
 Keep in mind that the database gets truncated for every run and the schema is up to date :)
