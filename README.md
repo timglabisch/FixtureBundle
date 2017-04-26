@@ -25,7 +25,7 @@ comments:
 ```
 
 You can use the full power of twig, for example to create loops etc.
-YOu even get autocompletion for libs like Faker.
+You even get autocompletion for libs like Faker.
 
 ### Loading the YAML File
 
